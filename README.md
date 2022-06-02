@@ -11,6 +11,7 @@ I am going to use this API for my app: <https://www.themealdb.com/api/json/v1/1/
 5. Display a new popup of the recipe when the client clicked on the dish.
 
 ### Folder Structure
+
 public
 src
 └── pages
@@ -20,3 +21,4 @@ src
 └── data.js
 └── style.css
 index.html
+
