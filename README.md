@@ -10,7 +10,7 @@ I am going to use this API for my app: <https://www.themealdb.com/api/json/v1/1/
 4. Displaying an error message if the result is not found.
 5. Display a new popup of the recipe when the client clicked on the dish.
 
-Folder Structure
+### Folder Structure
 public
 src
 └── pages
@@ -20,8 +20,3 @@ src
 └── data.js
 └── style.css
 index.html
-
-NICE-TO-HAVE
-
-- Add a feature that if you click on a tag it filters all the todo items for that tag
-- Make the input for the filtering a dropdown so that the user does not need to type anything
