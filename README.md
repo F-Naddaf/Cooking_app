@@ -1,1 +1,27 @@
-# Music_api_app
+# Cooking_app
+
+I am going to use this API for my app: <https://www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast>
+
+### The app will do
+
+1. Fitching data from the link.
+2. Creating a search button.
+3. Display all the search result with the image of the recipe.
+4. Displaying an error message if the result is not found.
+5. Display a new popup of the recipe when the client clicked on the dish.
+
+Folder Structure
+public
+src
+└── pages
+└── views
+└── app.js
+└── constants.js
+└── data.js
+└── style.css
+index.html
+
+NICE-TO-HAVE
+
+- Add a feature that if you click on a tag it filters all the todo items for that tag
+- Make the input for the filtering a dropdown so that the user does not need to type anything
