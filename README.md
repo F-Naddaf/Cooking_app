@@ -12,6 +12,7 @@ I am going to use this API for my app: <https://www.themealdb.com/api/json/v1/1/
 
 ### Folder Structure
 
+```text
 public
 src
 └── pages
@@ -21,4 +22,4 @@ src
 └── data.js
 └── style.css
 index.html
-
+```
