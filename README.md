@@ -16,7 +16,7 @@ Here is a working live demo : [Delectable Recipe](https://f-naddaf.github.io/Coo
 ## App features (content will be modified after finishing the app)
 
 It is a cooking app which can provide you a recipe for the dish you want to make with a picture and the name of the dish
-I will follow the [PostNL](https://www.postnl.nl) website style and gonna use [TheMealDB api](https://www.themealdb.com/) website to get the recipes.
+I will follow the [PostNL](https://www.postnl.nl) website style and gonna use [TheMealDB api](https://www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast) website to get the recipes.
 
 ## The app must have
 
