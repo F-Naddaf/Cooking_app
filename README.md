@@ -14,12 +14,12 @@ I am going to use this API for my app: <https://www.themealdb.com/api/json/v1/1/
 
 ```text
 public
+└── style.css
 src
 └── pages
 └── views
 └── app.js
 └── constants.js
 └── data.js
-└── style.css
 index.html
 ```
