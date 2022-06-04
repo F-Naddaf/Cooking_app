@@ -20,7 +20,7 @@ I will follow the [PostNL](https://www.postnl.nl) website style and gonna use [T
 
 ## The app must have
 
-- [ ] Nice logo.
+- [X] Nice logo.
 - [ ] Fetching data from the link.
 - [ ] User can search for a dishes.
 - [ ] Display all the relative search result with the image of the dishes.
