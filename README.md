@@ -11,7 +11,7 @@ with the pictures of the dishes and their names, and by clicking on the chosen d
 
 ## Demo
 
-Here is a working live demo : [Delectable Recipe](https://f-naddaf.github.io/Cooking_app)
+Here is a working live demo : [Delectable Recipe](https://f-naddaf.github.io/Cooking_app/index.html)
 
 ## App features (content will be modified after finishing the app)
 

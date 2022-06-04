@@ -1,30 +1,23 @@
 'use strict';
 
+import { createSearchElement } from "../views/init-view.js";
+import { getMealList } from "result-page.js"
+
 
 export const initPage = () => {
   const userInterface = document.getElementById(USER_INTERFACE_ID);
   userInterface.innerHTML = '';
 
-  const topper = document.createElement('div');
-  topper.classList.add('topper');
-  userInterface.appendChild(topper)
-
-  const logoContainer = document.createElement('div');
-  logoContainer.classList.add('logo-container')
-
-  const logo = document.createElement('div');
-  logo.classList.add('logo')
-  logoContainer.appendChild(logo)
+  const searchOfDish = createSearchElement();
+  userInterface.appendChild(searchOfDish)
 
   const img = document.createElement('img')
-  img.setAttribute('height', '120px');
   img.src = '../public/images/cooking-logo.png'
-  logoContainer.appendChild(img)
 
-  const companyName = document.createElement('h1')
+  const companyName = document.getElementById('company-name')
   companyName.textContent = "Delectable Recipe"
   logoContainer.appendChild(companyName)
-
 }
 
-const searchBtn = document.getElementById('search-btn');
+const searchButton = document.getElementById('search-btn')
+searchButton.addEventListener('click', getMealList);

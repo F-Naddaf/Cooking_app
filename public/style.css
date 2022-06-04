@@ -107,13 +107,13 @@ body {
   border-bottom-left-radius: 20px;
 }
 
-.search-btn {
+.search-button {
   width: 45px;
   height: 45px;
   font-size: 18px;
   background-color: #3440b6;
   border: none;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -122,8 +122,8 @@ i {
   color: white;
 }
 
-.search-btn:hover {
-  background-color: #ffc392;
+.search-button:hover {
+  background-color: rgba(237, 111, 0, 0.5);
   color: #ed7000;
 }
 
