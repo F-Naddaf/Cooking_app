@@ -21,10 +21,11 @@ I will follow the [PostNL](https://www.postnl.nl) website style and gonna use [T
 ## The app must have
 
 - [x] Nice logo.
-- [ ] Fetching data from the link.
-- [ ] User can search for a dishes.
-- [ ] Display all the relative search result with the image of the dishes.
-- [ ] Display an error message if the result is not found.
+- [x] Fetching data from the link.
+- [x] User can search for a dishes.
+- [x] Display all the relative search result with the image of the dishes.
+- [x] Display an error message if the result is not found.
+- [x] Making the app interact with a different devices.
 - [ ] Display a new popup of the recipe when the user clicked on the dish.
 
 ### Folder Structure
