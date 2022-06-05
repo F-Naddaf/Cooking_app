@@ -11,7 +11,7 @@ with the pictures of the dishes and their names, and by clicking on the chosen d
 
 ## Demo
 
-Here is a working live demo : [Delectable Recipe](https://f-naddaf.github.io/Cooking_app/index.html)
+Here is a working live demo : [Delectable Recipe](https://f-naddaf.github.io/Cooking_app/)
 
 ## App features (content will be modified after finishing the app)
 
@@ -20,7 +20,7 @@ I will follow the [PostNL](https://www.postnl.nl) website style and gonna use [T
 
 ## The app must have
 
-- [X] Nice logo.
+- [x] Nice logo.
 - [ ] Fetching data from the link.
 - [ ] User can search for a dishes.
 - [ ] Display all the relative search result with the image of the dishes.

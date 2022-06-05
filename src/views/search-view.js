@@ -19,6 +19,9 @@ export const createSearchResult = () => {
         </div>
       </div>
     </div>
+    <div class = "meal-result">
+    <h2 class = "title"></h2>
+  </div>
   </div>`;
   return element;
 };

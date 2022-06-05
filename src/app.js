@@ -1,6 +1,6 @@
 'use strict';
 
-import { initPage } from './Pages/search-page.js';
+import { initPage } from "../src/Pages/search-page.js";
 
 const loadApp = () => {
   initPage();
