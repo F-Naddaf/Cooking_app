@@ -34,16 +34,13 @@ body {
 }
 
 #logo {
-  width: 50px;
   padding: 5px;
-  margin-left: 200px;
 }
 
-.company-name {
+#company-name {
   font-size: 50px;
   font-weight: 700;
   color: #ed7000;
-  margin-right: 200px;
 }
 
 .btn {
@@ -61,7 +58,7 @@ body {
   font-size: 35px;
   margin-bottom: 10px;
   font-weight: 500;
-  color: #3440b6;
+  color: #001a73;
 }
 
 .description {
@@ -72,7 +69,7 @@ body {
 }
 
 .container {
-  min-height: 100vh;
+  max-height: 100vh;
 }
 
 .meal-wrapper {
@@ -90,6 +87,7 @@ body {
   margin: 15px 0;
   display: flex;
   align-items: stretch;
+  margin: auto;
 }
 
 .search-control,
@@ -98,7 +96,7 @@ body {
 }
 
 .search-control {
-  padding: 0 10px;
+  padding: 0 15px;
   font-size: 15px;
   color: #ed7000;
   outline: 0;
@@ -107,13 +105,13 @@ body {
   border-bottom-left-radius: 20px;
 }
 
-.search-btn {
+.search-button {
   width: 45px;
   height: 45px;
   font-size: 18px;
   background-color: #3440b6;
   border: none;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -122,16 +120,26 @@ i {
   color: white;
 }
 
-.search-btn:hover {
-  background-color: #ffc392;
-  color: #ed7000;
+.search-button:hover {
+  background-color: rgba(237, 111, 0, 0.5);
 }
 
 .meal-result {
   margin-top: 40px;
 }
 
-#meal {
+.meals-view {
+  display: block;
+  text-align: center;
+}
+
+.failed-search {
+  font-size: 22px;
+  color: red;
+  display: block;
+}
+
+.meals-container {
   margin: 25px;
 }
 
@@ -150,7 +158,9 @@ i {
 .meal-name {
   padding: 15px;
   font-size: 14px;
+  font-weight: 200;
   color: #ed7000;
+  text-align: center;
 }
 
 .recipe-btn {
@@ -161,6 +171,7 @@ i {
   font-size: 15px;
   padding: 8px;
   display: block;
+  text-align: center;
   width: 175px;
   margin: 10px auto;
   border-radius: 20px;
@@ -171,8 +182,16 @@ i {
   text-decoration: underline;
 }
 
+.notFound {
+  grid-template-columns: 1fr !important;
+  color: var(--tenne-tawny);
+  font-size: 1.8rem;
+  font-weight: 600;
+  width: 100%;
+}
+
 @media screen and (min-width: 600px) {
-  .meal-search-box {
+  .meals-search-box {
     width: 540px;
     margin-left: auto;
     margin-right: auto;
@@ -180,19 +199,21 @@ i {
   .logo-container {
     display: block;
   }
-  .company-name {
+  #company-name {
     font-size: 30px;
     text-align: center;
-    margin-right: 0;
   }
   #logo {
-    width: 20px;
-    align-content: center;
+    text-align: center;
+  }
+  .meals-container {
+    display: block;
+    text-align: center;
   }
 }
 
 @media screen and (min-width: 768px) {
-  #meal {
+  .meals-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -203,10 +224,16 @@ i {
   .meal-details {
     width: 700px;
   }
+  .logo-container {
+    display: block;
+  }
+  #logo {
+    align-content: center;
+  }
 }
 
 @media screen and (min-width: 992px) {
-  #meal {
+  .meals-container {
     grid-template-columns: repeat(3, 1fr);
   }
   .meal-search-box {
@@ -214,14 +241,9 @@ i {
   }
   .logo-container {
     display: flex;
+    justify-content: space-around;
   }
-  .company-name {
+  #company-name {
     font-size: 50px;
-    margin-right: 200px;
-  }
-  #logo {
-    width: 20px;
-    margin-left: 200px;
-
   }
 }

@@ -1,12 +1,9 @@
 'use strict';
 
-import { quizData } from './data.js';
-import { initWelcomePage } from './pages/welcomePage.js';
+import { initPage } from "../src/Pages/search-page.js";
 
 const loadApp = () => {
-  quizData.currentQuestionIndex = 0;
-
-  initWelcomePage();
+  initPage();
 };
 
 window.addEventListener('load', loadApp);

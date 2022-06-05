@@ -1,30 +1,29 @@
 'use strict';
 
+import { createSearchElement } from "../views/init-view.js";
+import { getMealList } from "./result-page.js"
+
 
 export const initPage = () => {
-  const userInterface = document.getElementById(USER_INTERFACE_ID);
+  const userInterface = document.getElementById('user-interface');
   userInterface.innerHTML = '';
+  
+  const searchOfDish = createSearchElement();
+  userInterface.appendChild(searchOfDish)
+  
+  const img = document.querySelector('img')
+  img.src = '../public/Images/cooking-logo.png'
 
-  const topper = document.createElement('div');
-  topper.classList.add('topper');
-  userInterface.appendChild(topper)
+  const title = document.querySelector('.title')
+  title.textContent = "Find Meals For Your Ingredients"
 
-  const logoContainer = document.createElement('div');
-  logoContainer.classList.add('logo-container')
-
-  const logo = document.createElement('div');
-  logo.classList.add('logo')
-  logoContainer.appendChild(logo)
-
-  const img = document.createElement('img')
-  img.setAttribute('height', '120px');
-  img.src = '../public/images/cooking-logo.png'
-  logoContainer.appendChild(img)
-
-  const companyName = document.createElement('h1')
+  const description = document.querySelector('.description')
+  description.textContent = "Real food doesn't have ingredients, real food is ingredients."
+  
+  const companyName = document.getElementById('company-name')
   companyName.textContent = "Delectable Recipe"
-  logoContainer.appendChild(companyName)
 
+  const searchButton = document.getElementById('search-btn')
+  searchButton.addEventListener('click', getMealList);
 }
 
-const searchBtn = document.getElementById('search-btn');

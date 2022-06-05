@@ -1,28 +1,27 @@
-'use strict';
+'use strick';
 
-export const createSearchElement = () => {
+import { initPage } from '../Pages/search-page.js';
+
+const initPage = initPage();
+export const createSearchResult = () => {
   const element = document.createElement('div');
   element.innerHTML = String.raw`
-  <div id="topper"></div>
-  <div class="logo-container">
-      <div id="logo">
-        <img src="../public/images/cooking-logo.png" alt="cooking logo" height="120px"/>
-      </div>
-      <h1 class="company-name">Delectable Recipe</h1>
-  </div>
-  <div class="container">
-      <div class="meal-wrapper">
-        <div class="meal-search"> 
-          <h2 class="title"><h2>
-          <span class="description"></span>  
-          <div class="meal-search-box">
-            <input type="text" class="search-control" placeholder="Enter an ingredient" id="search-input"/>
-            <button type="submit" class="search-btn btn" id="search-btn">
-              <i class="fas fa-search"></i>
-            </button> 
-          </div>
+  <div class="meal-result">
+    <h2 class="title">Your Search Results:</h2>
+    <div id="meal">
+      <div class="meal-item">
+        <div class="meal-img">
+          <img src="food.jpg" alt="food">
+        </div>
+        <div class="meal-name">
+          <h3>Potato Chips</h3>
+          <a href="#" class="recipe-btn">Get Recipe</a>
         </div>
       </div>
+    </div>
+    <div class = "meal-result">
+    <h2 class = "title"></h2>
+  </div>
   </div>`;
   return element;
 };
