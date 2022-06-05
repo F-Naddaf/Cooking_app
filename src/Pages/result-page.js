@@ -33,4 +33,4 @@ export async function getMealList(getMeal) {
   }
 }
 
-getMeal.addEventListener('click', getMealRecipe);
+// getMeal.addEventListener('click', getMealRecipe);
