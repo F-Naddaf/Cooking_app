@@ -12,7 +12,7 @@ export const initPage = () => {
   userInterface.appendChild(searchOfDish)
   
   const img = document.querySelector('img')
-  img.src = '../public/Images/cooking-logo.png'
+  img.src = './public/Images/cooking-logo.png'
 
   const title = document.querySelector('.title')
   title.textContent = "Find Meals For Your Ingredients"
