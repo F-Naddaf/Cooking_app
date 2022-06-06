@@ -10,10 +10,9 @@
   --dark-orange-color: #b46900;
   --light-gray-color: #f3f4f7;
   --medium-gray-color: #d4d9e3;
-  --dark-gry-color: #66728a;
+  /* --dark-gry-color: #66728a; */
   --light-blue-color: #3244b0;
   --medium-blue-color: #001a73;
-  --dark-blue-color: #27324c;
 }
 
 body {
@@ -52,7 +51,7 @@ body {
 #company-name {
   font-size: 50px;
   font-weight: 700;
-  color: var(--medium-orange-color)
+  color: var(--medium-orange-color);
 }
 
 .btn {
@@ -111,7 +110,7 @@ body {
   font-size: 15px;
   color: var(--light-orange-color);
   outline: 0;
-  border: 1px solid #d4d9e3;
+  border: 1px solid var(--medium-gray-color);
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -120,7 +119,6 @@ body {
   width: 45px;
   height: 45px;
   font-size: 18px;
-  /* background-color: #3440b6; */
   background-color: var(--light-orange-color);
   border: none;
   transition: all 0.3s linear;
@@ -172,14 +170,14 @@ i {
   padding: 15px;
   font-size: 14px;
   font-weight: 200;
-  color: #ed7000;
+  color: var(--medium-orange-color);
   text-align: center;
 }
 
 .recipe-btn {
   text-decoration: none;
   color: rgb(255, 255, 255);
-  background-color: #3440b6;
+  background-color: var(--light-blue-color);
   font-weight: 700;
   font-size: 15px;
   padding: 8px;
@@ -208,7 +206,7 @@ i {
     rgb(255, 255, 255),
     rgb(228, 241, 250)
   );
-  border: 1px solid #d4d9e3;
+  border: 1px solid var(--medium-gray-color);
   border-radius: 20px;
   text-align: center;
   justify-content: center;
@@ -226,9 +224,8 @@ i {
   width: 55px;
   height: 35px;
   font-size: 18px;
-  background-color: #3440b6;
+  background-color: var(--medium-blue-color);
   border: none;
-  transition: all 0.3s linear;
   border-radius: 15px;
   color: white;
 }
@@ -236,12 +233,11 @@ i {
 #close-btn:hover {
   cursor: pointer;
   transform: scale(0.9);
-  background-color: #ed7000
-  ;
+  background-color: var(--light-orange-color);
 }
 
 .recipe-title {
-  color: #ed7000;
+  color: var(--medium-orange-color);
   font-size: 50px;
   letter-spacing: 1px;
   padding-bottom: 20px;
@@ -250,7 +246,7 @@ i {
 
 .recipe-category {
   font-size: 30px;
-  color:#3440b6;
+  color: var(--light-blue-color);
   font-weight: 600;
   display: inline-block;
   padding: 2px 5px;
@@ -262,12 +258,15 @@ i {
 }
 
 .recipe-instruct h3 {
+  color: var(--dark-orange-color);
   font-size: 20px;
 }
 
 .recipe-instruct p {
   font-size: 15px;
-  padding: 15px 30px
+  text-align: justify;
+  padding: 15px 30px;
+  color: var(--dark-orange-color);
 }
 
 .recipe-meal-img img {
@@ -283,14 +282,13 @@ i {
 }
 
 .recipe-link a {
-  color: #3440b6;
+  color: var(--light-blue-color);
   font-size: 1.2rem;
   font-weight: 700;
-  transition: all 0.4s linear;
 }
 
 .recipe-link a:hover {
-  color: #ed7000;
+  color: var(--light-orange-color);
 }
 
 @media screen and (min-width: 600px) {
