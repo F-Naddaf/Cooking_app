@@ -1,7 +1,7 @@
 import { initPage } from '../Pages/search-page.js';
 import { createMeal } from '../views/init-view.js';
 
-export async function getMealList(getMeal) {
+export async function getMealList() {
   let searchInputTxt = document.getElementById('search-input').value.trim();
   initPage();
   const searchResult = document.querySelector('.title');
@@ -17,7 +17,10 @@ export async function getMealList(getMeal) {
     if (response.ok) {
       if (data.meals !== null) {
         data.meals.forEach((meal) => {
-          getMeal = createMeal(meal);
+          const getMeal = createMeal(meal);
+          getMeal.addEventListener('click', () => {
+            getMealRecipe()
+          })
           mealsContainer.appendChild(getMeal);
         });
         return;
@@ -33,4 +36,3 @@ export async function getMealList(getMeal) {
   }
 }
 
-// getMeal.addEventListener('click', getMealRecipe);
