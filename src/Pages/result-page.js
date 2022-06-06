@@ -20,12 +20,12 @@ export async function getMealList() {
         data.meals.forEach((meal) => {
           const getMeal = createMeal(meal);
           mealsContainer.appendChild(getMeal);
-        });
-        const getRecipeButtons = document.querySelectorAll('.recipe-btn');
-        getRecipeButtons.forEach (btn => {
-          btn.addEventListener('click', () => {
-            getMealRecipe();
-        })
+          const getRecipeButtons = getMeal.querySelectorAll('.recipe-btn');
+          getRecipeButtons.forEach((btn) => {
+            btn.addEventListener('click', () => {
+              getMealRecipe(meal.idMeal);
+            });
+          });
         });
         return;
       }

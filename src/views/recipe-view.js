@@ -2,7 +2,9 @@
 
 export const mealRecipeModal = (meal) => {
   const element = document.createElement('div');
+  element.classList.add('showRecipe')
   element.innerHTML = `
+  <button id = "close-btn">close</button>
   <h2 class = "recipe-title">${meal.strMeal}</h2>
       <p class = "recipe-category">${meal.strCategory}</p>
       <div class = "recipe-instruct">
