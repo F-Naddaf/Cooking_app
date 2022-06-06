@@ -31,7 +31,8 @@ export const initPage = () => {
     } else {
       const mealsView = document.querySelector('.meals-view');
       const failedSearchMessage = document.createElement('h3');
-      failedSearchMessage.innerHTML = "Sorry, you didn't type anything!";
+      failedSearchMessage.innerHTML =
+        "Sorry, you didn't enter any recipe name!";
       failedSearchMessage.classList.add('failed-search');
       mealsView.appendChild(failedSearchMessage);
       // const searchButton = document.getElementById('search-btn')
