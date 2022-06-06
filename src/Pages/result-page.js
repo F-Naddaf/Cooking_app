@@ -1,4 +1,5 @@
 import { initPage } from '../Pages/search-page.js';
+import { getMealRecipe } from '../Pages/recipe-page.js';
 import { createMeal } from '../views/init-view.js';
 
 export async function getMealList() {
@@ -18,10 +19,13 @@ export async function getMealList() {
       if (data.meals !== null) {
         data.meals.forEach((meal) => {
           const getMeal = createMeal(meal);
-          getMeal.addEventListener('click', () => {
-            getMealRecipe()
-          })
           mealsContainer.appendChild(getMeal);
+          const getRecipeButtons = getMeal.querySelectorAll('.recipe-btn');
+          getRecipeButtons.forEach((btn) => {
+            btn.addEventListener('click', () => {
+              getMealRecipe(meal.idMeal);
+            });
+          });
         });
         return;
       }
@@ -29,10 +33,9 @@ export async function getMealList() {
     throw new Error('Failed');
   } catch (errors) {
     console.log(errors);
-    const failedSearchMessage = document.createElement('h3')
-    failedSearchMessage.innerHTML = "Sorry, we didn't find any meal!"
-    failedSearchMessage.classList.add("failed-search")
-    mealsView.appendChild(failedSearchMessage)
+    const failedSearchMessage = document.createElement('h3');
+    failedSearchMessage.innerHTML = "Sorry, we didn't find any meal!";
+    failedSearchMessage.classList.add('failed-search');
+    mealsView.appendChild(failedSearchMessage);
   }
 }
-

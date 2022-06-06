@@ -5,7 +5,7 @@ import { initPage } from '../Pages/search-page.js';
 const initPage = initPage();
 export const createSearchResult = () => {
   const element = document.createElement('div');
-  element.innerHTML = String.raw`
+  element.innerHTML = `
   <div class="meal-result">
     <h2 class="title">Your Search Results:</h2>
     <div id="meal">
