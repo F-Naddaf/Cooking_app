@@ -24,19 +24,24 @@ export const initPage = () => {
   companyName.textContent = 'Delectable Recipe';
 
   const searchButton = document.getElementById('search-btn');
-  searchButton.onclick = function (e) {
+  searchButton.onclick = function () {
     let searchInputTxt = document.getElementById('search-input').value;
     if (searchInputTxt !== '') {
       getMealList();
     } else {
-      const mealsView = document.querySelector('.meals-view');
-      const failedSearchMessage = document.createElement('h3');
-      failedSearchMessage.innerHTML =
-        "Sorry, you didn't enter any recipe name!";
-      failedSearchMessage.classList.add('failed-search');
-      mealsView.appendChild(failedSearchMessage);
-      // const searchButton = document.getElementById('search-btn')
-      // searchButton.setAttribute("disabled", "true");
+      searchFail()
     }
   };
 };
+
+const searchFail = () => {
+  const mealsView = document.querySelector('.meals-view');
+  const failedSearchMessage = document.createElement('h3');
+  failedSearchMessage.innerHTML =
+    "Sorry, you didn't enter any recipe name!";
+  failedSearchMessage.classList.add('failed-search');
+  mealsView.appendChild(failedSearchMessage);
+  const searchButton = document.getElementById('search-btn')
+  searchButton.addEventListener('keyup', getMealList)
+  // searchButton.setAttribute("disabled", "true");
+}

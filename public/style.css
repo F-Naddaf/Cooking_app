@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  --light-orange-color: #ed8c00;
+  --medium-orange-color: #ed7000;
+  --dark-orange-color: #b46900;
+  --light-gray-color: #f3f4f7;
+  --medium-gray-color: #d4d9e3;
+  --dark-gry-color: #66728a;
+  --light-blue-color: #3244b0;
+  --medium-blue-color: #001a73;
+  --dark-blue-color: #27324c;
+}
+
 body {
   font-family: arial, sans-serif;
   background-image: linear-gradient(
@@ -18,16 +30,16 @@ body {
 
 #topper {
   top: 0;
-  background-color: #f3f4f7;
+  background-color: var(--light-gray-color);
   height: 30px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #d4d9e3;
+  border-bottom: 1px solid var(--medium-gray-color);
 }
 
 .logo-container {
   background-color: #fff;
-  border-bottom: 1px solid #d4d9e3;
+  border-bottom: 1px solid var(--medium-gray-color);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -40,7 +52,7 @@ body {
 #company-name {
   font-size: 50px;
   font-weight: 700;
-  color: #ed7000;
+  color: var(--medium-orange-color)
 }
 
 .btn {
@@ -56,15 +68,14 @@ body {
 
 .title {
   font-size: 35px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-weight: 500;
-  color: #001a73;
+  color: var(--medium-blue-color);
 }
 
 .description {
   font-size: 20px;
-  margin-bottom: 10px;
-  color: #ed7000;
+  color: var(--dark-orange-color);
   font-weight: 300;
 }
 
@@ -87,7 +98,7 @@ body {
   margin: 15px 0;
   display: flex;
   align-items: stretch;
-  margin: auto;
+  margin: 30px auto auto auto;
 }
 
 .search-control,
@@ -98,7 +109,7 @@ body {
 .search-control {
   padding: 0 15px;
   font-size: 15px;
-  color: #ed7000;
+  color: var(--light-orange-color);
   outline: 0;
   border: 1px solid #d4d9e3;
   border-top-left-radius: 20px;
@@ -109,11 +120,12 @@ body {
   width: 45px;
   height: 45px;
   font-size: 18px;
-  background-color: #3440b6;
+  /* background-color: #3440b6; */
+  background-color: var(--light-orange-color);
   border: none;
   transition: all 0.3s linear;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 i {
@@ -121,7 +133,7 @@ i {
 }
 
 .search-button:hover {
-  background-color: rgba(237, 111, 0, 0.5);
+  background-color: var(--dark-orange-color);
   cursor: pointer;
 }
 
@@ -136,7 +148,7 @@ i {
 
 .failed-search {
   font-size: 22px;
-  color: red;
+  color: var(--dark-orange-color);
   display: block;
 }
 
