@@ -4,6 +4,7 @@ import { createMeal } from '../views/init-view.js';
 
 export async function getMealList() {
   let searchInputTxt = document.getElementById('search-input').value.trim();
+  
   initPage();
   const searchResult = document.querySelector('.title');
   searchResult.textContent = 'Your Search Results:';
