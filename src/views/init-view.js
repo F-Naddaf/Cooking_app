@@ -17,15 +17,15 @@ export const createSearchElement = () => {
         <span class="description"></span>  
         <div class="meal-search-box">
           <input type="text" class="search-control" placeholder="Enter an ingredient" id="search-input"/>
-          <button type="submit" class="search-button" id="search-btn">
+          <button type="submit" id="search-btn">
             <i class="fas fa-search"></i>
           </button> 
         </div>
       </div>
     </div>
-  </div>
-  <div class = "meals-view">
-    <div class="meals-container"></div>
+    <div class = "meals-view">
+      <div class="meals-container"></div>
+    </div>
   </div>
   `;
   return element;

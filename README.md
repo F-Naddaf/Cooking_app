@@ -1,6 +1,6 @@
-# Cooking_app
+# Delectable Recipe
 
-The app name will be Delectable Recipe.
+The app name is Delectable-recipe-app.
 The link of API website is: [TheMealDB](https://www.themealdb.com/)
 
 ## About Delectable Recipe
@@ -25,19 +25,30 @@ I will follow the [PostNL](https://www.postnl.nl) website style and gonna use [T
 - [x] User can search for a dishes.
 - [x] Display all the relative search result with the image of the dishes.
 - [x] Display an error message if the result is not found.
+- [x] When the user start searching without entering any dish name will be
+throw an error message and the search button will be disabled and enabled
+when start typing.
+- [x] Display a new popup of the recipe when the user clicked on the dish.
+- [x] The user can select other recipe before closing the old recipe popup.
 - [x] Making the app interact with a different devices.
-- [ ] Display a new popup of the recipe when the user clicked on the dish.
 
 ### Folder Structure
 
 ```text
 public
 └── style.css
+└── Images
+  └── cooking-logo.png
 src
 └── pages
+  └── recipe-page.js
+  └── result-page.js
+  └── search-page.js
 └── views
+  └── init-view.js
+  └── recipe-view.js
+  └── search-view.js
 └── app.js
-└── constants.js
-└── data.js
 index.html
+README.md
 ```
