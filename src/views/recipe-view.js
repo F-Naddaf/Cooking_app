@@ -3,7 +3,6 @@
 export const mealRecipeModal = (meal) => {
   const element = document.createElement('div');
   element.classList.add('showRecipe')
-  console.log(element)
   element.innerHTML = `
   <div class = "view-recipe">
     <button id = "close-btn">close</button>
