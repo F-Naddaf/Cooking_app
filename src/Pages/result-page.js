@@ -15,7 +15,6 @@ export async function getMealList() {
       `https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`,
     );
     const data = await response.json();
-    console.log(response.ok);
     if (response.ok) {
       if (data.meals !== null) {
         data.meals.forEach((meal) => {

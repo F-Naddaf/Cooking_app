@@ -1,4 +1,4 @@
-'use strick';
+'use strict';
 
 import { initPage } from '../Pages/search-page.js';
 
